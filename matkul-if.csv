@@ -1,0 +1,56 @@
+Kode MK;Mata Kuliah;Kelas;Nama;Ruang;Kapasitas
+IF2514201;Aljabar Linier dan Geometri;A;Ramadhan Paninggalih S.Si., M.Si., M.Sc.;B-103-00;40
+IF2514201;Aljabar Linier dan Geometri;B;Ramadhan Paninggalih S.Si., M.Si., M.Sc.;E-307-00;40
+IF2514301;Arsitektur Komputer;A;Aninditya Anggari Nuryono, S.T., M.Eng.;E-101-00;40
+IF2514301;Arsitektur Komputer;B;Riska Kurniyanto Abdullah, S.T., M.Kom.;E-104-00;60
+IF2514301;Arsitektur Komputer;C;Aninditya Anggari Nuryono, S.T., M.Eng.;E-303-00;40
+IF2514701;Capstone Project;_;Ramadhan Paninggalih S.Si., M.Si., M.Sc.;E-102-00;80
+IF2514601;Deep Learning;_;Boby Mugi Pratama, S.Si., M.Han.;A-308-00;80
+IF2514501;Desain Web;A;Rizal Kusuma Putra, M.T.;E-307-00;40
+IF2514501;Desain Web;B;Rizal Kusuma Putra, M.T.;B-103-00;40
+IF2514503;Implementasi dan Pengujian Perangkat Lunak;A;Nur Fajri Azhar S.Kom., M.Kom.;E-201-00;60
+IF2514503;Implementasi dan Pengujian Perangkat Lunak;B;Nur Fajri Azhar S.Kom., M.Kom.;E-305-00;100
+IF2514503;Implementasi dan Pengujian Perangkat Lunak;C;Nur Fajri Azhar S.Kom., M.Kom.;E-305-00;100
+IF2514502;Interaksi Manusia dan Komputer;A;Nisa Rizqiya Fadhliana, S.Kom., M.T.;B-106-00;40
+IF2514502;Interaksi Manusia dan Komputer;B;Nisa Rizqiya Fadhliana, S.Kom., M.T.;B-103-00;40
+IF2514502;Interaksi Manusia dan Komputer;C;Nisa Rizqiya Fadhliana, S.Kom., M.T.;E-301-00;60
+IF2515002;Kapita Selekta;_;Nisa Rizqiya Fadhliana, S.Kom., M.T.;E-104-00;60
+IF2515102;Keamanan Siber (Pengayaan);X;Darmansyah, S.Si., M.T.I;E-302-00;40
+IF2515203;Kecerdasan Web;_;Gusti Ahmad Fanshuri Alfarisy, S.Kom., M.Kom.;E-206-00;40
+IF2514702;Keprofesian Informatika;A;Nur Fajri Azhar S.Kom., M.Kom.;E-103-00;40
+IF2514702;Keprofesian Informatika;B;Darmansyah, S.Si., M.T.I;E-307-00;40
+IF2516703;Kerja Praktek;_;Nisa Rizqiya Fadhliana, S.Kom., M.T.;0000;40
+IF2515202;Komputasi Evolusioner;_;;;
+IF2514504;Manajemen Basis Data;A;Bowo Nugroho, S.Kom., M.Eng.;E-105-00;40
+IF2514504;Manajemen Basis Data;B;Bowo Nugroho, S.Kom., M.Eng.;E-301-00;60
+IF2514504;Manajemen Basis Data;C;Bowo Nugroho, S.Kom., M.Eng.;E-204-00;60
+IF2515301;Manajemen Proyek TIK;_;Riska Kurniyanto Abdullah, S.T., M.Kom.;B-106-00;40
+IF2514101;Matematika Diskrit;A;Ramadhan Paninggalih S.Si., M.Si., M.Sc.;E-201-00;60
+IF2514101;Matematika Diskrit;B;Ramadhan Paninggalih S.Si., M.Si., M.Sc.;E-301-00;60
+IF2514506;Pemrograman Fungsional;A;Gusti Ahmad Fanshuri Alfarisy, S.Kom., M.Kom.;E-305-00;100
+IF2514506;Pemrograman Fungsional;B;Gusti Ahmad Fanshuri Alfarisy, S.Kom., M.Kom.;E-204-00;60
+IF2515206;Pemrosesan Bahasa Alami;_;Bima Prihasto, S.Si., M.Si., Ph.D.;E-103-00;40
+IF2514102;Pengantar Informatika;A;Muchammad Chandra Cahyo Utomo, S. Kom., M. Kom.;E-206-00;40
+IF2514102;Pengantar Informatika;B;Muchammad Chandra Cahyo Utomo, S. Kom., M. Kom.;E-202-00;80
+IF2514302;Pengantar Kecerdasan Artifisial;A;Bima Prihasto, S.Si., M.Si., Ph.D.;E-307-00;40
+IF2514302;Pengantar Kecerdasan Artifisial;B;Gusti Ahmad Fanshuri Alfarisy, S.Kom., M.Kom.;B-103-00;40
+IF2514302;Pengantar Kecerdasan Artifisial;C;Bima Prihasto, S.Si., M.Si., Ph.D.;E-205-00;80
+IF2514704;Pengembangan Aplikasi Perangkat Bergerak;A;Rizal Kusuma Putra, M.T.;F-103-00;40
+IF2514704;Pengembangan Aplikasi Perangkat Bergerak;B;Rizal Kusuma Putra, M.T.;B-103-00;40
+IF2514505;Pengolahan Citra Digital;A;Rizky Amelia, S.Si., M.Han.;E-305-00;100
+IF2514505;Pengolahan Citra Digital;B;Rizky Amelia, S.Si., M.Han.;E-306-00;40
+IF2517801;Proposal Tugas Akhir;_;Nisa Rizqiya Fadhliana, S.Kom., M.T.;E-304-00;40
+IF2515403;Sains Data (Pengayaan);X;Ramadhan Paninggalih S.Si., M.Si., M.Sc.;E-306-00;40
+IF2514103;Sistem Digital;A;Boby Mugi Pratama, S.Si., M.Han.;E-101-00;40
+IF2514103;Sistem Digital;B;Boby Mugi Pratama, S.Si., M.Han.;E-303-00;40
+IF2514103;Sistem Digital;C;Boby Mugi Pratama, S.Si., M.Han.;B-102-00;40
+IF2514303;Sistem Operasi;A;Darmansyah, S.Si., M.T.I;E-103-00;40
+IF2514303;Sistem Operasi;B;Darmansyah, S.Si., M.T.I;B-103-00;40
+IF2514303;Sistem Operasi;C;Darmansyah, S.Si., M.T.I;E-205-00;80
+IF2514604;Sistem Paralel dan Terdistribusi;A;Riska Kurniyanto Abdullah, S.T., M.Kom.;E-103-00;40
+IF2514604;Sistem Paralel dan Terdistribusi;B;Riska Kurniyanto Abdullah, S.T., M.Kom.;B-103-00;40
+IF2514305;Struktur Data;A;Muchammad Chandra Cahyo Utomo, S. Kom., M. Kom.;E-305-00;100
+IF2514305;Struktur Data;B;Muchammad Chandra Cahyo Utomo, S. Kom., M. Kom.;E-202-00;80
+IF2514305;Struktur Data;C;Bowo Nugroho, S.Kom., M.Eng.;A-308-00;80
+IF2517802;Tugas Akhir;_;Nisa Rizqiya Fadhliana, S.Kom., M.T.;A-105-00;80
+IF2515404;Visi Komputer;_;Rizky Amelia, S.Si., M.Han.;E-307-00;40
