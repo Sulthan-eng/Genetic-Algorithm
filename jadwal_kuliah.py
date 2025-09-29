@@ -202,8 +202,7 @@ def tampil_jadwal(jadwal, pinalti_final):
         if j.slot_waktu["Hari"] != hari_ini:
             hari_ini = j.slot_waktu["Hari"]
             print(f"\n--- {hari_ini.upper()} ---")
-        print(f" Sesi{j.slot_waktu['Sesi']} {j.slot_waktu['Jam']}: {j.mata_kuliah} ({j.kelas}) | Dosen : {j.nama_dosen}) | Ruang : {j.ruang} | Kapasitas : {j.kapasitas} ")
-    # print("--------------------------------------\n")
+        print(f" Sesi {j.slot_waktu['Sesi']} {j.slot_waktu['Jam']}: [{j.kode_matkul}] {j.mata_kuliah} ({j.kelas}) | Dosen : {j.nama_dosen}) | Ruang : {j.ruang} | Kapasitas : {j.kapasitas} ")
 
 def genetik_algoritma():
     """Fungsi yg menjalankan proses evolusi"""
