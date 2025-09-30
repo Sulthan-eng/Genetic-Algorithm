@@ -210,9 +210,15 @@ def genetik_algoritma():
 
     for gen in range(banyak_generasi):
         populasi.sort(key = hitung_fitness_function)
-        if hitung_fitness_function(populasi[0]) == 0:
-            print(f"\nSolusi terbaik ditemukan di generasi ke {gen}\n")
+
+        pinalti_terbaik = hitung_fitness_function(populasi[0])
+
+        print(f"Generasi ke {gen+1}, nilai pinalti : {pinalti_terbaik}")
+
+        if pinalti_terbaik == 0:
+            print(f"\nSolusi terbaik ditemukan di generasi ke {gen+1}\n")
             break
+
 
         populasi_baru = populasi[:20]   #elitisme (20 individu terbaik gen skrg dibawa ke gen berikutnya)
         while len(populasi_baru) < ukuran_populasi:
