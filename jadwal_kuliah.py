@@ -8,8 +8,8 @@ banyak_generasi = 100
 rate_mutasi = 0.1
 
 #bobot penalti
-pinalti_keras = 100
-pinalti_santai = 10
+penalti_keras = 100
+penalti_santai = 10
 
 class MataKuliah:
     #konstruktor
@@ -116,7 +116,7 @@ def buat_individu():
 def hitung_fitness_function(jadwal):
     """Hitung total penalti, semakin sedikit atau nilai 0, penalti semakin baik.
     Fungsi ini mengiterasi list of dict dan mengakses data melalui key dengan metode pengelompokkan"""
-    pinalti = 0
+    penalti = 0
 
     #dict kosong utk menampung kelompok jadwal
     slots = defaultdict(list)
@@ -136,11 +136,11 @@ def hitung_fitness_function(jadwal):
             list_ruang = [c.ruang for c in jadwal_kelas]
 
             if len(set(list_kode_matkul)) < len(list_kode_matkul):
-                pinalti += pinalti_keras
+                penalti += penalti_keras
             if len(set(list_dosen)) < len(list_dosen):
-                pinalti += pinalti_keras
+                penalti += penalti_keras
             if len(set(list_ruang)) < len(list_ruang):
-                pinalti += pinalti_keras
+                penalti += penalti_keras
 
     """Batasan Lunak : 
         Kelas Paralel di jadwal sebisa mungkin ga di hari yg sama"""
@@ -155,7 +155,7 @@ def hitung_fitness_function(jadwal):
 
     for kode, set_hari in hari_matkul.items():
         if hitung_matkul[kode] > 1 and len(set_hari) < hitung_matkul[kode]:
-            pinalti += pinalti_santai * (hitung_matkul[kode] - len(set_hari))
+            penalti += penalti_santai * (hitung_matkul[kode] - len(set_hari))
 
     """Batasan Lunak : 
         1 dosen dalam sehari mengajar tidak lebih dari 3 sesi
@@ -166,8 +166,8 @@ def hitung_fitness_function(jadwal):
 
     for beban in beban_dosen_harian.values():
         if beban > 3:
-            pinalti += pinalti_santai
-    return pinalti
+            penalti += penalti_santai
+    return penalti
 
 
 def reproduksi(parent1, parent2):
@@ -188,12 +188,12 @@ def mutasi(jadwal):
             matkul.slot_waktu = random.choice(Slot_Waktu)
     return jadwal
 
-def tampil_jadwal(jadwal, pinalti_final):
+def tampil_jadwal(jadwal, penalti_final):
     """Mencetak jadwal dgn format yg mudah dibaca"""
     jadwal.sort(key=lambda x: (Hari_Urut.index(x.slot_waktu["Hari"]), x.slot_waktu["Sesi"]))
 
     print("\n ---JADWAL KULIAH---")
-    print("Dengan Nilai Pinalti : ", pinalti_final, "\n")
+    print("Dengan Nilai Penalti : ", penalti_final, "\n")
 
     hari_ini = ""
     for j in jadwal:
@@ -209,11 +209,11 @@ def genetik_algoritma():
     for gen in range(banyak_generasi):
         populasi.sort(key = hitung_fitness_function)
 
-        pinalti_terbaik = hitung_fitness_function(populasi[0])
+        penalti_terbaik = hitung_fitness_function(populasi[0])
 
-        print(f"Generasi ke {gen+1}, nilai pinalti : {pinalti_terbaik}")
+        print(f"Generasi ke {gen+1}, nilai penalti : {penalti_terbaik}")
 
-        if pinalti_terbaik == 0:
+        if penalti_terbaik == 0:
             print(f"\nSolusi terbaik ditemukan di generasi ke {gen+1}\n")
             break
 
@@ -228,8 +228,8 @@ def genetik_algoritma():
         populasi = populasi_baru
 
     jadwal_terbaik = populasi[0]
-    pinalti_terbaik = hitung_fitness_function(jadwal_terbaik)
-    tampil_jadwal(jadwal_terbaik, pinalti_terbaik)
+    penalti_terbaik = hitung_fitness_function(jadwal_terbaik)
+    tampil_jadwal(jadwal_terbaik, penalti_terbaik)
 
 if __name__ == "__main__":
     genetik_algoritma()
