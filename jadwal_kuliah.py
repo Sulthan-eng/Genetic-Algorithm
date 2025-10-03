@@ -36,7 +36,7 @@ List_Matkul = [
     MataKuliah("IF2514503","Implementasi dan Pengujian Perangkat Lunak","B","Nur Fajri Azhar S.Kom., M.Kom.","E-305-00",100),
     MataKuliah("IF2514503","Implementasi dan Pengujian Perangkat Lunak","C","Nur Fajri Azhar S.Kom., M.Kom.","E-305-00",100),
     MataKuliah("IF2514502","Interaksi Manusia dan Komputer","A","Nisa Rizqiya Fadhliana, S.Kom., M.T.","B-106-00",40),
-    MataKuliah("IF2514502","Interaksi Manusia dan Komputer","B","Nisa Rizqiya Fadhliana, S.Kom., M.T.","B-103-00",40),
+    MataKuliah("IF2514502","Interaksi Manusia dan Komputer","B", "Nisa Rizqiya Fadhliana, S.Kom., M.T.","B-103-00",40),
     MataKuliah("IF2514502","Interaksi Manusia dan Komputer","C","Nisa Rizqiya Fadhliana, S.Kom., M.T.","E-301-00",60),
     MataKuliah("IF2515002","Kapita Selekta","-","Nisa Rizqiya Fadhliana, S.Kom., M.T.", "E-104-00",60),
     MataKuliah("IF2515102","Keamanan Siber","X","Darmansyah, S.Si., M.T.I","E-302-00",40),
@@ -167,7 +167,6 @@ def hitung_fitness_function(jadwal):
     for beban in beban_dosen_harian.values():
         if beban > 3:
             pinalti += pinalti_santai
-
     return pinalti
 
 
@@ -179,7 +178,6 @@ def reproduksi(parent1, parent2):
     anak = copy.deepcopy(parent1)
     for i in range(c, n):
         anak[i].slot_waktu = copy.deepcopy(parent2[i].slot_waktu)
-
     return anak
 
 def mutasi(jadwal):
