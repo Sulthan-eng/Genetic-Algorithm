@@ -114,7 +114,7 @@ def buat_individu():
     return jadwal
 
 def hitung_fitness_function(jadwal):
-    """Hitung total penalti, semakin sedikit atau nilai 0, penalti semakin baik.
+    """Hitung total penalti, semakin sedikit atau nilai penalti 0, semakin baik generasi tersebut.
     Fungsi ini mengiterasi list of dict dan mengakses data melalui key dengan metode pengelompokkan"""
     penalti = 0
 
