@@ -97,13 +97,13 @@ Slot_Waktu = [
     {"Hari" : "Kamis", "Sesi" : 2, "Jam" : "(10.20-12.00)"},
     {"Hari" : "Kamis", "Sesi" : 3, "Jam" : "(13.00-15.30)"},
     {"Hari" : "Kamis", "Sesi" : 4, "Jam" : "(16.00-17.30)"},
-    {"Hari" : "Jum'at", "Sesi" : 2, "Jam" : "(09.20-11.00)"},
-    {"Hari" : "Jum'at", "Sesi" : 3, "Jam" : "(13.30-15.30)"},
-    {"Hari" : "Jum'at", "Sesi" : 4, "Jam" : "(16.00-17.30)"},
+    {"Hari" : "Jumat", "Sesi" : 2, "Jam" : "(09.20-11.00)"},
+    {"Hari" : "Jumat", "Sesi" : 3, "Jam" : "(13.30-15.30)"},
+    {"Hari" : "Jumat", "Sesi" : 4, "Jam" : "(16.00-17.30)"},
 ]
 
 """Agar hari berurutan ketika ditampilkan"""
-Hari_Urut = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at"]
+Hari_Urut = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat"]
 
 def buat_individu():
     """Menciptakan 1 individu jadwal dengan slot acak."""
@@ -200,7 +200,7 @@ def tampil_jadwal(jadwal, penalti_final):
         if j.slot_waktu["Hari"] != hari_ini:
             hari_ini = j.slot_waktu["Hari"]
             print(f"\n--- {hari_ini.upper()} ---")
-        print(f" Sesi {j.slot_waktu['Sesi']} {j.slot_waktu['Jam']}: [{j.kode_matkul}] {j.mata_kuliah} ({j.kelas}) | Dosen : {j.nama_dosen}) | Ruang : {j.ruang} | Kapasitas : {j.kapasitas} ")
+        print(f" Sesi {j.slot_waktu['Sesi']} {j.slot_waktu['Jam']}: [{j.kode_matkul}] {j.mata_kuliah} ({j.kelas}) | Dosen : {j.nama_dosen} | Ruang : {j.ruang} | Kapasitas : {j.kapasitas} ")
 
 def genetik_algoritma():
     """Fungsi yg menjalankan proses evolusi"""
